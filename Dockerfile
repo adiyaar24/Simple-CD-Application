@@ -11,7 +11,7 @@ COPY Main.java /usr/src/app
 RUN javac Main.java
 
 # Define an argument for version number
-ARG APP_VERSION=1.0.0
+ARG APP_VERSION
 
 # Tag the Docker image with the version number
 LABEL version=$APP_VERSION
